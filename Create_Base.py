@@ -1,6 +1,6 @@
 from Classes import Some_Loads, coordinate_scans
 import random
-
+#Для проверки работы репозиритория
 
 Coordinate_scans_list = []
 Traffic_list = []
