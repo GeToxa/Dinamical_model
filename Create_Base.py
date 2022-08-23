@@ -19,7 +19,7 @@ creat_traffic()
 
 def creat_coordinate_scans():
     for _ in range(3):
-        scan_coord = coordinate_scans(random.randint(1, 2), random.randint(1, 3))
+        scan_coord = coordinate_scans(random.randint(1, 2), 100, random.randint(1, 3))
         Coordinate_scans_list.append(scan_coord)
     for scans in Coordinate_scans_list:
         print(scans.scantime, scans.KWT)

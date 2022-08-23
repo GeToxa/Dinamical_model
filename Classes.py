@@ -27,8 +27,10 @@ class Some_Loads():
 
 
 class coordinate_scans():
-    def __init__(self, scantime, KWT):
+    def __init__(self, scantime, coordinate_work, KWT):
         self.scantime = scantime
         self.KWT = KWT
-        self.basic_period = 7
+        self.basic_period = 1
+        self.range_of_work = 50
+        self.coordinate_work = coordinate_work
 
