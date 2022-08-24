@@ -20,11 +20,13 @@ creat_traffic()
 def creat_coordinate_scans():
     place = 0
     for _ in range(3):
-        scan_coord = coordinate_scans(random.randint(1, 2), place + 100, random.randint(1, 3))
+        scan_coord = coordinate_scans(random.randint(2, 5), place + 100, random.randint(1, 3))
         Coordinate_scans_list.append(scan_coord)
         place += 100
     for scans in Coordinate_scans_list:
-        print(scans.scantime, scans.coordinate_work, scans.KWT)
+        print('Время на обработку одного ТС', scans.scantime,
+              'Точка расположения датчика', scans.coordinate_work,
+              'Потребляемая мощность датчика', scans.KWT)
     return Coordinate_scans_list
 
 creat_coordinate_scans()

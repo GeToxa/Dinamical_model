@@ -12,13 +12,14 @@ class Some_Loads():
     def get_mass_speed(self):
         self.Mass = round(self.Mass + random.triangular(-2, 2, 0.1))
         self.Speed = round(((self.Speed + random.triangular(-10, 10, 0.1))*360)/1000)
-        print(self.Mass, self.Speed)
+        print('Масса транспортного средства', self.Mass, 'т,',
+              'Скорость транспортного средства', self.Speed, 'м/с')
 
     def Culc_time(self):
         way_time = self.way / self.Speed
         return way_time
     def get_start(self):
-        print(self.start_time)
+        print('Время попадания в мостовую зону', self.start_time)
         return self.start_time
     def get_end_time(self):
         end_time = self.start_time + Some_Loads.Culc_time(self)
