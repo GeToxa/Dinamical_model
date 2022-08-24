@@ -25,20 +25,20 @@ def creat_coordinate_scans():
         place += 100
     for scans in Coordinate_scans_list:
         print(scans.scantime, scans.coordinate_work, scans.KWT)
+    return Coordinate_scans_list
 
 creat_coordinate_scans()
 
-def get_cross():
+def get_time_bending():
     Traffic_way_time_list = []
     for Traffics in Traffic_list:
         way_time = Traffics.get_end_time()
         Traffic_way_time_list.append(way_time)
     max_way_time = max(Traffic_way_time_list)
     min_way_time = min(Traffic_way_time_list)
-    print(max_way_time, min_way_time)
+    Bending_of_work = [round(max_way_time), round(min_way_time)]
+    return Bending_of_work
 
-
-
-get_cross()
+get_time_bending()
 
 
