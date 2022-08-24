@@ -22,7 +22,6 @@ class Some_Loads():
         return self.start_time
     def get_end_time(self):
         end_time = self.start_time + Some_Loads.Culc_time(self)
-        print(end_time)
         return end_time
 
 
@@ -33,4 +32,6 @@ class coordinate_scans():
         self.basic_period = 1
         self.range_of_work = 50
         self.coordinate_work = coordinate_work
+        self.coordinate_of_range_start = self.coordinate_work - 25
+        self.coordinate_of_range_end = self.coordinate_work + 25
 
